@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="1" style="background-color: rgb(11, 11, 151)" />
+        <col span="2," style="background-color: yellow" />
+      </colgroup>
+      <tr>
+        <td colspan="3" style="text-align: center">MY FIRST TABLE</td>
+      </tr>
+      <tr>
+        <td>First cell</td>
+        <td>Second cell</td>
+        <td rowspan="3" style="text-align: center">6 cells merged together</td>
+      </tr>
+      <td colspan="2">2 cells merged into one</td>
+      <tr>
+        <td style="text-align: center">1 st cell <br />3 rd row</td>
+        <td style="text-align: center">2 nd cell <br />3 rd row</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center">Do you like tables?</td>
+      </tr>
+    </table>
+  </body>
 </html>
